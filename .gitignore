@@ -1,0 +1,14 @@
+# ignore idea files
+
+.idea
+*.iml
+
+# ignore maven output files
+
+target/
+
+# ignore eclipse files
+
+.project
+bin/
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.yastarter</groupId>
+    <artifactId>code-generator-plugin</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>code-generator-plugin-core</module>
+        <module>code-generator-plugin-api</module>
+        <module>code-generator-plugin-helper</module>
+        <module>code-generator-plugin-site</module>
+        <module>code-generator-plugin-maven</module>
+    </modules>
+
+    <properties>
+        <java.source>1.8</java.source>
+        <java.target>1.8</java.target>
+    </properties>
+
+</project>
