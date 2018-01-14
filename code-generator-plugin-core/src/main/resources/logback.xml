@@ -56,7 +56,7 @@
     </appender>
 
     <!--<logger name="com.oovever" additivity="false" level="INFO" >-->
-        <!--<appender-ref ref="code-generator" />-->
+        <!--<appender-ref ref="code-config" />-->
         <!--<appender-ref ref="console"/>-->
     <!--</logger>-->
 
