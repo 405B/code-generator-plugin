@@ -1,1 +1,4 @@
 2018-01-14 23:12:34.868 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-14 23:16:13.407 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-14 23:16:50.389 [main] ERROR c.y.g.core.config.GeneratorConfigTest - ddd
+2018-01-14 23:16:50.393 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded

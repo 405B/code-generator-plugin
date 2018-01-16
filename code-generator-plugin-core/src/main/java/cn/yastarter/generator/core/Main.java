@@ -1,10 +1,33 @@
 package cn.yastarter.generator.core;
 
+import cn.yastarter.generator.core.config.GeneratorConfig;
+import cn.yastarter.generator.core.config.VelocityConfig;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.FileUtils;
+import org.apache.velocity.app.VelocityEngine;
+
+import java.io.File;
+import java.io.IOException;
 
 @Slf4j
 public class Main {
     public static void main(String[] args) {
-        log.error("test");
+        GeneratorConfig.init();
+        VelocityConfig.init();
+        try {
+//            based on output dir create new folder
+            FileUtils.forceMkdir(new File(GeneratorConfig.getOutputDir()));
+            log.info("base folder create completed");
+        } catch (IOException e) {
+            log.error("can not create new folder", e);
+        }
+//        Clean up all the contents of the folder
+        try {
+            FileUtils.cleanDirectory(new File(GeneratorConfig.getOutputDir()));
+            log.info("base folder clean completed");
+        } catch (IOException e) {
+            log.error("can not clean folder", e);
+        }
+
     }
 }

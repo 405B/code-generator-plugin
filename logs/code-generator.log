@@ -1,1 +1,9 @@
 2018-01-14 19:24:29.033 [main] ERROR cn.yastarter.generator.core.Main - test
+2018-01-14 23:17:39.786 [main] INFO  cn.yastarter.generator.core.Main - test
+2018-01-14 23:17:39.787 [main] ERROR cn.yastarter.generator.core.Main - test
+2018-01-16 23:01:50.481 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-16 23:01:50.483 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-16 23:02:55.576 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-16 23:02:55.578 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-16 23:02:55.660 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-16 23:02:55.661 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
