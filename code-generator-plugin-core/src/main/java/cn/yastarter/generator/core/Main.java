@@ -2,6 +2,8 @@ package cn.yastarter.generator.core;
 
 import cn.yastarter.generator.core.config.GeneratorConfig;
 import cn.yastarter.generator.core.config.VelocityConfig;
+import cn.yastarter.generator.core.generator.reader.DbReader;
+import cn.yastarter.generator.core.generator.reader.DbReaderFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.apache.velocity.app.VelocityEngine;
@@ -28,6 +30,8 @@ public class Main {
         } catch (IOException e) {
             log.error("can not clean folder", e);
         }
+//        Get the corresponding database instance
+        DbReader dbReader = DbReaderFactory.createDbReader();
 
     }
 }

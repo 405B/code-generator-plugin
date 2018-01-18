@@ -7,6 +7,13 @@ package cn.yastarter.generator.core.common;
 public class Constant {
     public static final String NOT = "0";
     public static final String YES = "1";
+
+    public static final String SIGN_DOT = ".";
+    public static final String SIGN_SLASH = "/";
+    public static final String SIGN_UNDERLINE = "_";
+    public static final String JAVA_FILE_SUFFIX = ".java";
+
+
     public enum DbType {
         /**
          * mysql database
