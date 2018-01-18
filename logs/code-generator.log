@@ -7,3 +7,657 @@
 2018-01-16 23:02:55.578 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
 2018-01-16 23:02:55.660 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
 2018-01-16 23:02:55.661 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:37:31.039 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:38:00.632 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:39:58.066 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:40:07.272 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:44:02.123 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:45:30.397 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:45:46.793 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:46:26.044 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:46:26.046 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:46:26.122 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:46:26.200 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:46:26.450 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:46:26.451 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:46:26.452 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:46:26.464 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:46:26.482 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:46:26.483 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:46:26.518 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:46:26.529 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:46:26.530 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:46:26.530 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:46:26.541 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:46:26.554 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:46:26.554 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:46:26.554 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:46:26.555 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:46:26.562 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:46:26.567 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:47:02.891 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:47:02.894 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:47:02.985 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:47:06.917 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:47:06.920 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:47:07.024 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:47:07.033 [main] ERROR cn.yastarter.generator.core.Main - can not clean folder
+java.io.IOException: Unable to delete directory d:\tmp\generator-result\src\main\java\self\aub.
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1623)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at cn.yastarter.generator.core.Main.main(Main.java:33)
+2018-01-18 17:47:07.281 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:47:07.283 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:47:07.283 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:47:07.299 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:47:07.319 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:47:07.320 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:47:07.338 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:47:07.353 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:47:07.353 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:47:07.354 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:47:07.374 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:47:07.384 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:47:07.384 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:47:07.384 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:47:07.388 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:47:08.851 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:47:10.675 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:48:17.131 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:48:17.133 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:48:17.216 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:48:17.232 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:48:17.414 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:48:17.416 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:48:17.416 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:48:17.426 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:48:17.439 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:48:17.439 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:48:17.447 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:48:17.455 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:48:17.455 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:48:17.455 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:48:17.462 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:48:17.470 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:48:17.470 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:48:17.470 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:48:17.472 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:48:17.479 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:48:17.484 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:48:17.485 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:48:17.497 [main] ERROR c.y.generator.core.generator.Generator - can not find template test/pojo/MysqlPoTemp.vm
+org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'test/pojo/MysqlPoTemp.vm'
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.loadResource(ResourceManagerImpl.java:474)
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.getResource(ResourceManagerImpl.java:352)
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1533)
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1514)
+	at org.apache.velocity.runtime.RuntimeSingleton.getTemplate(RuntimeSingleton.java:299)
+	at org.apache.velocity.app.Velocity.getTemplate(Velocity.java:358)
+	at cn.yastarter.generator.core.generator.Generator.getTemplate(Generator.java:76)
+	at cn.yastarter.generator.core.generator.Generator.write2FileBySchema(Generator.java:45)
+	at cn.yastarter.generator.core.generator.codeGenerate.pojo.MysqlPoJoGenerator.generate(MysqlPoJoGenerator.java:28)
+	at cn.yastarter.generator.core.generator.dbGenerator.MysqlGenerator.generate(MysqlGenerator.java:56)
+	at cn.yastarter.generator.core.Main.main(Main.java:45)
+2018-01-18 17:48:58.751 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:48:58.753 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:48:58.847 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:48:58.874 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:48:59.044 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:48:59.045 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:48:59.046 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:48:59.055 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:48:59.069 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:48:59.069 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:48:59.077 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:48:59.085 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:48:59.086 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:48:59.086 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:48:59.093 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:48:59.100 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:48:59.100 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:48:59.101 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:48:59.102 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:48:59.111 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:48:59.115 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:48:59.117 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:48:59.132 [main] ERROR c.y.generator.core.generator.Generator - syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+2018-01-18 17:49:59.906 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:49:59.908 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:49:59.996 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:50:00.019 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:50:00.226 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:50:00.228 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:50:00.228 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:50:00.239 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:50:00.257 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:50:00.257 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:50:00.268 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:50:00.277 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:50:00.277 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:50:00.277 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:50:00.286 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:50:00.298 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:50:00.298 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:50:00.298 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:50:02.786 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:50:06.506 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:50:12.858 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:50:15.642 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:50:22.778 [main] ERROR c.y.generator.core.generator.Generator - syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+2018-01-18 17:51:40.682 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:51:40.685 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:51:40.775 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:51:40.792 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:51:40.959 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:51:40.961 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:51:40.961 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:51:40.972 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:51:40.985 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:51:40.985 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:51:40.993 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:51:41.000 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:51:41.000 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:51:41.000 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:51:41.008 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:51:41.015 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:51:41.016 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:51:41.016 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:51:43.481 [main] ERROR c.y.generator.core.generator.Generator - generate file fail : {}
+java.io.FileNotFoundException: d:\tmp\generator-result\src\main\java\self\aub\product\cgt\pojo\CategoryPojo.java (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at java.io.FileWriter.<init>(FileWriter.java:63)
+	at cn.yastarter.generator.core.generator.Generator.getWriter(Generator.java:62)
+	at cn.yastarter.generator.core.generator.Generator.write2FileBySchema(Generator.java:46)
+	at cn.yastarter.generator.core.generator.codeGenerate.pojo.MysqlPoJoGenerator.generate(MysqlPoJoGenerator.java:28)
+	at cn.yastarter.generator.core.generator.dbGenerator.MysqlGenerator.generate(MysqlGenerator.java:56)
+	at cn.yastarter.generator.core.Main.main(Main.java:45)
+2018-01-18 17:52:33.902 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:52:33.905 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:52:34.002 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:52:34.003 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:52:34.187 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:52:34.189 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:52:34.189 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:52:34.200 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:52:34.215 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:52:34.215 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:52:34.223 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:52:34.231 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:52:34.232 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:52:34.232 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:52:34.240 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:52:34.252 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:52:34.252 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:52:34.252 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:52:34.253 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:52:34.261 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:52:34.265 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:52:34.266 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:52:34.283 [main] ERROR c.y.generator.core.generator.Generator - syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+2018-01-18 17:52:56.268 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:52:56.271 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:52:56.357 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:52:56.380 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:52:56.569 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:52:56.570 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:52:56.570 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:52:56.580 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:52:56.593 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:52:56.593 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:52:56.600 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:52:56.610 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:52:56.610 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:52:56.610 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:52:56.619 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:52:56.627 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:52:56.627 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:52:56.627 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:52:56.628 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:52:56.637 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:52:56.640 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:52:56.641 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:52:56.659 [main] ERROR c.y.generator.core.generator.Generator - syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+2018-01-18 17:53:26.866 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:53:26.869 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:53:26.958 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:53:26.985 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:53:27.194 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:53:27.195 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:53:27.195 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:53:27.207 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:53:27.223 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:53:27.224 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:53:27.233 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:53:27.242 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:53:27.243 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:53:27.243 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:53:27.252 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:53:27.261 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:53:27.261 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:53:27.261 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:53:27.263 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:53:27.271 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:53:27.277 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:53:27.278 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:53:27.303 [main] ERROR c.y.generator.core.generator.Generator - syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+2018-01-18 17:54:26.789 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:54:26.791 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:54:26.862 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:54:26.881 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:54:27.056 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:54:27.058 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:54:27.058 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:54:27.070 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:54:27.087 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:54:27.088 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:54:27.096 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:54:27.104 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:54:27.104 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:54:27.104 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:54:27.112 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:54:27.120 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:54:27.121 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:54:27.121 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:54:27.123 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:54:27.131 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:54:27.136 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:54:27.137 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:54:27.152 [main] ERROR c.y.generator.core.generator.Generator - syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+2018-01-18 17:55:28.652 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:55:28.655 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:55:28.744 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:55:28.763 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:55:28.977 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:55:28.978 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:55:28.978 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:55:28.989 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:55:29.004 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:55:29.004 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:55:29.041 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:55:29.052 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:55:29.052 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:55:29.052 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:55:29.061 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:55:29.078 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:55:29.079 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:55:29.079 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:55:29.080 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:55:29.093 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:55:29.099 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:55:29.100 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:55:29.116 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-01-18 17:55:29.117 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:55:29.117 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:55:29.117 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-01-18 17:55:29.121 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-01-18 17:55:29.122 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:55:29.122 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:55:29.122 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java
+2018-01-18 17:55:42.608 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:55:42.610 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:55:42.704 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:55:42.739 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:55:42.910 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:55:42.912 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:55:42.912 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:55:42.923 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:55:42.936 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:55:42.937 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:55:42.944 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:55:42.952 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:55:42.953 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:55:42.953 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:55:42.961 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:55:42.969 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:55:42.970 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:55:42.970 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:55:42.971 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:55:42.981 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:55:42.982 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:55:42.983 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:55:43.001 [main] ERROR c.y.generator.core.generator.Generator - syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+2018-01-18 17:56:02.669 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:56:02.673 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:56:02.768 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:56:02.789 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:56:03.001 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:56:03.003 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:56:03.003 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:56:03.013 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:56:03.030 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:56:03.030 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:56:03.041 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:56:03.054 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:56:03.054 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:56:03.054 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:56:03.065 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:56:03.074 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:56:03.074 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:56:03.074 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:56:03.075 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:56:03.086 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:56:03.090 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:56:03.091 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:56:03.111 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-01-18 17:56:03.111 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:56:03.111 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:56:03.111 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-01-18 17:56:03.116 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-01-18 17:56:03.116 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:56:03.116 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:56:03.116 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java
+2018-01-18 17:56:16.098 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:56:16.101 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:56:16.191 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:56:16.219 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:56:16.388 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:56:16.389 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:56:16.389 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:56:16.400 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:56:16.447 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:56:16.447 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:56:16.456 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:56:16.466 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:56:16.467 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:56:16.467 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:56:16.478 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:56:16.488 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:56:16.489 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:56:16.489 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:56:16.491 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:56:16.499 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:56:16.504 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:56:16.505 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:56:16.523 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-01-18 17:56:16.523 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:56:16.523 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:56:16.523 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-01-18 17:56:16.527 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-01-18 17:56:16.527 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:56:16.527 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:56:16.527 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java
+2018-01-18 17:56:27.266 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:56:27.269 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:56:27.351 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:56:27.377 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:56:27.557 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:56:27.558 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:56:27.558 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:56:27.567 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:56:27.581 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:56:27.581 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:56:27.588 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:56:27.597 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:56:27.598 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:56:27.598 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:56:27.605 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:56:27.614 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:56:27.615 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:56:27.615 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:56:27.616 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:56:27.625 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:56:27.628 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:56:27.629 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:56:27.643 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-01-18 17:56:27.643 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:56:27.644 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:56:27.644 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-01-18 17:56:27.647 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-01-18 17:56:27.647 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:56:27.648 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:56:27.648 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java
+2018-01-18 17:56:45.253 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:56:45.255 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:56:45.340 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:56:45.366 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:56:45.557 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:56:45.558 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:56:45.558 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:56:45.568 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:56:45.582 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:56:45.582 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:56:45.590 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:56:45.598 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:56:45.598 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:56:45.598 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:56:45.608 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:56:45.615 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:56:45.616 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:56:45.616 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:56:45.617 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:56:45.623 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:56:45.627 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:56:45.628 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:56:45.647 [main] ERROR c.y.generator.core.generator.Generator - syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+2018-01-18 17:57:13.172 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:57:13.174 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:57:13.250 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:57:13.267 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:57:13.438 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:57:13.439 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:57:13.439 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:57:13.449 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:57:13.461 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:57:13.461 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:57:13.468 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:57:13.478 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:57:13.478 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:57:13.478 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:57:13.486 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:57:13.494 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:57:13.494 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:57:13.494 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:57:13.495 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:57:13.502 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:57:13.507 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:57:13.508 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:57:13.529 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-01-18 17:57:13.529 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:57:13.529 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:57:13.529 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-01-18 17:57:13.534 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-01-18 17:57:13.534 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:57:13.534 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:57:13.534 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java
+2018-01-18 17:57:21.863 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:57:21.866 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:57:21.944 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:57:21.979 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:57:22.175 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:57:22.176 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:57:22.176 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:57:22.187 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:57:22.202 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:57:22.202 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:57:22.212 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:57:22.221 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:57:22.221 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:57:22.221 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:57:22.229 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:57:22.237 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:57:22.238 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:57:22.239 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:57:22.241 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:57:22.249 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:57:22.251 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:57:22.252 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:57:22.274 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-01-18 17:57:22.274 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:57:22.274 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:57:22.275 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-01-18 17:57:22.284 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-01-18 17:57:22.285 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:57:22.285 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:57:22.285 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java
+2018-01-18 17:58:41.277 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:58:41.281 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:58:41.371 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:58:41.385 [main] ERROR cn.yastarter.generator.core.Main - can not clean folder
+java.io.IOException: Unable to delete directory d:\tmp\generator-result\src\main\java\self\aub\product\cgt.
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1623)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at cn.yastarter.generator.core.Main.main(Main.java:33)
+2018-01-18 17:58:41.583 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:58:41.585 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:58:41.585 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:58:41.598 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:58:41.613 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:58:41.613 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:58:41.622 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:58:41.630 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:58:41.630 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:58:41.630 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:58:41.640 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:58:41.654 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:58:41.655 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:58:41.655 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:58:41.656 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:58:41.657 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:58:41.660 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:58:41.662 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:58:41.687 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-01-18 17:58:41.687 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:58:41.687 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:58:41.687 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-01-18 17:58:41.691 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-01-18 17:58:41.692 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:58:41.692 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:58:41.692 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java
+2018-01-18 17:59:09.026 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 17:59:09.029 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 17:59:09.111 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 17:59:09.134 [main] INFO  cn.yastarter.generator.core.Main - base folder clean completed
+2018-01-18 17:59:09.324 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 17:59:09.326 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 17:59:09.326 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 17:59:09.338 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 17:59:09.351 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 17:59:09.352 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 17:59:09.363 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 17:59:09.372 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 17:59:09.372 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 17:59:09.372 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 17:59:09.380 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 17:59:09.390 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 17:59:09.390 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 17:59:09.390 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 17:59:09.391 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 17:59:09.399 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:59:09.403 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:59:09.404 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 17:59:09.424 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-01-18 17:59:09.424 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:59:09.424 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:59:09.424 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-01-18 17:59:09.429 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-01-18 17:59:09.430 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 17:59:09.430 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 17:59:09.430 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java
+2018-01-18 18:00:13.091 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 18:00:13.093 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 18:00:13.170 [main] INFO  cn.yastarter.generator.core.Main - base folder create completed
+2018-01-18 18:00:13.251 [main] ERROR cn.yastarter.generator.core.Main - can not clean folder
+java.io.IOException: Unable to delete directory d:\tmp\generator-result\src\main\java\self\aub\product.
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1623)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at cn.yastarter.generator.core.Main.main(Main.java:33)
+2018-01-18 18:00:13.422 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 18:00:13.423 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 18:00:13.423 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 18:00:13.435 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 18:00:13.449 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 18:00:13.449 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 18:00:13.457 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 18:00:13.475 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 18:00:13.475 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 18:00:13.475 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 18:00:13.484 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 18:00:13.493 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 18:00:13.493 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 18:00:13.494 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-01-18 18:00:13.495 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-01-18 18:00:13.497 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 18:00:13.502 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 18:00:13.504 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-01-18 18:00:13.524 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-01-18 18:00:13.525 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 18:00:13.525 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 18:00:13.525 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-01-18 18:00:13.529 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-01-18 18:00:13.530 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp/generator-result/src/main/java/self/aub/product/cgt/
+2018-01-18 18:00:13.530 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp/generator-result/src/main/resources/mapper/
+2018-01-18 18:00:13.530 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java

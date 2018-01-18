@@ -21,7 +21,7 @@ public class Layer {
     private String classSuffixPojo;
 
 
-    public Layer(String classSuffixController, String classSuffixService, String classSuffixDao, String classSuffixPo) {
+    public Layer(String classSuffixController, String classSuffixService, String classSuffixDao, String classSuffixPojo) {
         this.classSuffixController = classSuffixController;
         this.layerNameController = classSuffixController.toLowerCase();
         this.fileSuffixController = classSuffixController + JAVA_FILE_SUFFIX;
@@ -34,9 +34,9 @@ public class Layer {
         this.layerNameDao = classSuffixDao.toLowerCase();
         this.fileSuffixDao = classSuffixDao + JAVA_FILE_SUFFIX;
 
-        this.classSuffixPojo = classSuffixPo;
-        this.layerNamePojo = classSuffixPo.toLowerCase();
-        this.fileSuffixPojo = classSuffixPo + JAVA_FILE_SUFFIX;
+        this.classSuffixPojo = classSuffixPojo;
+        this.layerNamePojo = classSuffixPojo.toLowerCase();
+        this.fileSuffixPojo = classSuffixPojo + JAVA_FILE_SUFFIX;
     }
 
 

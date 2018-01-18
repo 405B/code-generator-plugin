@@ -1,2 +1,121 @@
 [19:24:29.033][ERROR][cn.yastarter.generator.core.Main][main] test
 [23:17:39.787][ERROR][cn.yastarter.generator.core.Main][main] test
+[17:47:07.033][ERROR][cn.yastarter.generator.core.Main][main] can not clean folder
+java.io.IOException: Unable to delete directory d:\tmp\generator-result\src\main\java\self\aub.
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1623)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at cn.yastarter.generator.core.Main.main(Main.java:33)
+[17:48:17.497][ERROR][c.y.generator.core.generator.Generator][main] can not find template test/pojo/MysqlPoTemp.vm
+org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'test/pojo/MysqlPoTemp.vm'
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.loadResource(ResourceManagerImpl.java:474)
+	at org.apache.velocity.runtime.resource.ResourceManagerImpl.getResource(ResourceManagerImpl.java:352)
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1533)
+	at org.apache.velocity.runtime.RuntimeInstance.getTemplate(RuntimeInstance.java:1514)
+	at org.apache.velocity.runtime.RuntimeSingleton.getTemplate(RuntimeSingleton.java:299)
+	at org.apache.velocity.app.Velocity.getTemplate(Velocity.java:358)
+	at cn.yastarter.generator.core.generator.Generator.getTemplate(Generator.java:76)
+	at cn.yastarter.generator.core.generator.Generator.write2FileBySchema(Generator.java:45)
+	at cn.yastarter.generator.core.generator.codeGenerate.pojo.MysqlPoJoGenerator.generate(MysqlPoJoGenerator.java:28)
+	at cn.yastarter.generator.core.generator.dbGenerator.MysqlGenerator.generate(MysqlGenerator.java:56)
+	at cn.yastarter.generator.core.Main.main(Main.java:45)
+[17:48:59.132][ERROR][c.y.generator.core.generator.Generator][main] syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+[17:50:22.778][ERROR][c.y.generator.core.generator.Generator][main] syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+[17:51:43.481][ERROR][c.y.generator.core.generator.Generator][main] generate file fail : {}
+java.io.FileNotFoundException: d:\tmp\generator-result\src\main\java\self\aub\product\cgt\pojo\CategoryPojo.java (系统找不到指定的路径。)
+	at java.io.FileOutputStream.open(Native Method)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:101)
+	at java.io.FileWriter.<init>(FileWriter.java:63)
+	at cn.yastarter.generator.core.generator.Generator.getWriter(Generator.java:62)
+	at cn.yastarter.generator.core.generator.Generator.write2FileBySchema(Generator.java:46)
+	at cn.yastarter.generator.core.generator.codeGenerate.pojo.MysqlPoJoGenerator.generate(MysqlPoJoGenerator.java:28)
+	at cn.yastarter.generator.core.generator.dbGenerator.MysqlGenerator.generate(MysqlGenerator.java:56)
+	at cn.yastarter.generator.core.Main.main(Main.java:45)
+[17:52:34.283][ERROR][c.y.generator.core.generator.Generator][main] syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+[17:52:56.659][ERROR][c.y.generator.core.generator.Generator][main] syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+[17:53:27.303][ERROR][c.y.generator.core.generator.Generator][main] syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+[17:54:27.152][ERROR][c.y.generator.core.generator.Generator][main] syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+[17:55:43.001][ERROR][c.y.generator.core.generator.Generator][main] syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+[17:56:45.647][ERROR][c.y.generator.core.generator.Generator][main] syntax error in template test/pojo/MysqlPoTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " " at test/pojo/MysqlPoTemplate.vm[line 7, column 22]
+Was expecting:
+    <RPAREN> ...
+    
+[17:58:41.385][ERROR][cn.yastarter.generator.core.Main][main] can not clean folder
+java.io.IOException: Unable to delete directory d:\tmp\generator-result\src\main\java\self\aub\product\cgt.
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1623)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at cn.yastarter.generator.core.Main.main(Main.java:33)
+[18:00:13.251][ERROR][cn.yastarter.generator.core.Main][main] can not clean folder
+java.io.IOException: Unable to delete directory d:\tmp\generator-result\src\main\java\self\aub\product.
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1623)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at cn.yastarter.generator.core.Main.main(Main.java:33)

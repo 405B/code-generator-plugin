@@ -42,6 +42,8 @@ public class Generator {
      * @param outputFilepath output file location
      */
     protected static void write2FileBySchema(String templateFile, VelocityContext context, String outputFilepath) {
+        System.out.println(GeneratorConfig.getGenerateTemplateLocation().concat(templateFile));
+
         Template template = getTemplate(GeneratorConfig.getGenerateTemplateLocation().concat(templateFile));
         Writer writer = getWriter(outputFilepath);
         template.merge(context, writer);

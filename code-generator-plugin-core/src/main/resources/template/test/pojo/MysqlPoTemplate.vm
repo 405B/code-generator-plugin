@@ -1,0 +1,12 @@
+package ${systemPackage}.${layer.layerNamePojo};
+import lombok.Data;
+
+
+@Data
+public class ${tableNameClass}${layer.classSuffixPojo}{
+#foreach ($column in $columnList)
+    private ${column.columnType} ${column.columnNameVariable};
+#end
+    public ${tableNameClass}${layer.classSuffixPojo}() {
+    }
+}

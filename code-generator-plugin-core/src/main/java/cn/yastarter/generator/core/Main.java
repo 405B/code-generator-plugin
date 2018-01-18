@@ -42,6 +42,7 @@ public class Main {
         DbGenerator dbGenerator = DbGeneratorFactory.createDbGenerator();
         for (Table table : tableList) {
 //            generate each table
+            dbGenerator.generate(table);
         }
     }
 }

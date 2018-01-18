@@ -25,6 +25,6 @@ public class MysqlPoJoGenerator extends Generator {
         context.put("columnList", table.getColumnList());
         context.put("layer", layer);
         String outputFilePath = generateOutputFilePath(tableNameClass, outputDir, layer.getLayerNamePojo(), layer.getFileSuffixPojo());
-        write2FileBySchema("/po/MysqlPoTemp.vm", context, outputFilePath);
+        write2FileBySchema("/pojo/MysqlPoTemplate.vm", context, outputFilePath);
     }
 }
