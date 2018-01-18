@@ -165,4 +165,7 @@ public class GeneratorConfig {
     public static String getClassSuffixPojo() {
         return CONFIGS.get(CLASS_SUFFIX_POJO);
     }
+    public static Layer getLayer() {
+        return layer;
+    }
 }

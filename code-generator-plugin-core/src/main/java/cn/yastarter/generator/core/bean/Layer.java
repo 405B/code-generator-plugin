@@ -80,15 +80,15 @@ public class Layer {
         return classSuffixDao;
     }
 
-    public String getLayerNamePo() {
+    public String getLayerNamePojo() {
         return layerNamePojo;
     }
 
-    public String getFileSuffixPo() {
+    public String getFileSuffixPojo() {
         return fileSuffixPojo;
     }
 
-    public String getClassSuffixPo() {
+    public String getClassSuffixPojo() {
         return classSuffixPojo;
     }
 }

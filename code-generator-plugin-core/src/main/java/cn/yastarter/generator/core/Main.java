@@ -1,15 +1,20 @@
 package cn.yastarter.generator.core;
 
+import cn.yastarter.generator.core.bean.Table;
 import cn.yastarter.generator.core.config.GeneratorConfig;
 import cn.yastarter.generator.core.config.VelocityConfig;
+import cn.yastarter.generator.core.generator.dbGenerator.DbGenerator;
+import cn.yastarter.generator.core.generator.dbGenerator.DbGeneratorFactory;
 import cn.yastarter.generator.core.generator.reader.DbReader;
 import cn.yastarter.generator.core.generator.reader.DbReaderFactory;
+import javafx.scene.control.Tab;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.apache.velocity.app.VelocityEngine;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 @Slf4j
 public class Main {
@@ -31,7 +36,12 @@ public class Main {
             log.error("can not clean folder", e);
         }
 //        Get the corresponding database instance
-        DbReader dbReader = DbReaderFactory.createDbReader();
-
+        DbReader    dbReader    = DbReaderFactory.createDbReader();
+        List<Table> tableList   = dbReader.getTableBeans();
+//        get mysql generator
+        DbGenerator dbGenerator = DbGeneratorFactory.createDbGenerator();
+        for (Table table : tableList) {
+//            generate each table
+        }
     }
 }

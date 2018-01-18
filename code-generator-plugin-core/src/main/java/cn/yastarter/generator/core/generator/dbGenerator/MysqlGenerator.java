@@ -1,9 +1,13 @@
 package cn.yastarter.generator.core.generator.dbGenerator;
 
 import cn.yastarter.generator.core.bean.Table;
+import cn.yastarter.generator.core.common.Constant;
+import cn.yastarter.generator.core.config.GeneratorConfig;
 import cn.yastarter.generator.core.generator.dbGenerator.DbGenerator;
+import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.File;
 import java.util.List;
 
 /**
@@ -18,7 +22,37 @@ public class MysqlGenerator implements DbGenerator {
      */
     @Override
     public void generate(Table table) {
-
+//        table of mysql database
+        String tableNameDb = table.getTableNameDb();
+        log.info("generate code file for table : {} ", tableNameDb);
+//        get output base package config
+        String basePackage = GeneratorConfig.getBasePackage();
+//        get model package config
+        String modelName = table.getModleName();
+//       model output location
+        String modelPackatge = "";
+//        mybatis output location
+        String modelMapperPath = "";
+//       need to separate table
+        if (modelName.length() > 0) {
+            modelPackatge = Constant.SIGN_DOT.concat(modelName);
+            modelMapperPath = modelName.concat(Constant.SIGN_SLASH);
+        }
+//        system out put package
+        String systemPackage = basePackage + modelPackatge;
+//        out put path
+        String systemPackageDir = systemPackage.replace(Constant.SIGN_DOT, Constant.SIGN_SLASH);
+//base file
+        String javaOutputDir = GeneratorConfig.getOutputDir() + Constant.SOURCE_JAVA + systemPackageDir + Constant.SIGN_SLASH;
+        new File(javaOutputDir).mkdirs();
+        log.info("generate ouput java dir : {}", javaOutputDir);
+//mapper file
+        String mapperOutputDir = GeneratorConfig.getOutputDir() + Constant.SOURCE_RESOURCE_MAPPER + modelMapperPath;
+        new File(mapperOutputDir).mkdirs();
+        log.info("generate ouput mapper dir : {}", mapperOutputDir);
+//        generator pojo code
+        if (GeneratorConfig.isGeneratePojo()) {
+        }
     }
 
     /**
