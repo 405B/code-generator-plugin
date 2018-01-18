@@ -1,8 +1,10 @@
 package cn.yastarter.generator.core.config;
 
+import cn.yastarter.generator.core.bean.Layer;
 import cn.yastarter.generator.core.common.Constant;
 import cn.yastarter.generator.core.common.Constant.DbType;
 import lombok.extern.slf4j.Slf4j;
+
 
 import java.util.HashMap;
 import java.util.PropertyResourceBundle;
@@ -51,6 +53,7 @@ public class GeneratorConfig {
 
     private static final HashMap<String, String> CONFIGS = new HashMap<>();
 
+    private static Layer layer;
     /**
      * Initialize the config information
      * load the config file
@@ -61,6 +64,7 @@ public class GeneratorConfig {
             CONFIGS.put(key, resourceBundle.getString(key));
         }
         log.info("the config file has loaded");
+        layer = new Layer(CONFIGS.get(CLASS_SUFFIX_CONTROLLER), CONFIGS.get(CLASS_SUFFIX_SERVICE), CONFIGS.get(CLASS_SUFFIX_DAO), CONFIGS.get(CLASS_SUFFIX_POJO));
     }
 
     /**
