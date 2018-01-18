@@ -2,3 +2,59 @@
 2018-01-14 23:16:13.407 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
 2018-01-14 23:16:50.389 [main] ERROR c.y.g.core.config.GeneratorConfigTest - ddd
 2018-01-14 23:16:50.393 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 16:04:06.644 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 16:04:06.647 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 16:04:06.977 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 16:04:06.979 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 16:04:06.979 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 16:04:06.991 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 16:04:07.005 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 16:04:07.006 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 16:04:31.924 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 16:04:31.927 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 16:04:32.222 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 16:04:32.223 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 16:04:32.223 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 16:04:32.234 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 16:04:32.248 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 16:04:32.248 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 16:04:45.538 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 16:04:57.346 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 16:05:15.158 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 16:05:15.161 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 16:05:15.162 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 16:05:17.647 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 16:05:17.691 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 16:05:17.691 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 16:07:03.219 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 16:07:05.194 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 16:07:10.205 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 16:07:10.208 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 16:07:10.208 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 16:07:13.952 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 16:07:14.001 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 16:07:14.002 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 16:07:38.853 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 16:07:39.338 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 16:07:43.562 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 16:07:43.565 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 16:07:43.566 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 16:07:49.850 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 16:08:01.658 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 16:08:05.603 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 16:10:14.254 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-01-18 16:10:14.257 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-01-18 16:10:14.511 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-01-18 16:10:14.513 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-01-18 16:10:14.513 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-01-18 16:10:14.527 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-01-18 16:10:14.540 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-01-18 16:10:14.540 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-01-18 16:10:14.551 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-01-18 16:10:14.562 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-01-18 16:10:14.562 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-01-18 16:10:14.562 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-01-18 16:10:14.573 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-01-18 16:10:14.582 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-01-18 16:10:14.582 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-01-18 16:10:14.583 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name

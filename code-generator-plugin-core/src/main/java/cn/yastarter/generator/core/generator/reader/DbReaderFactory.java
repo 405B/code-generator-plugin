@@ -19,7 +19,7 @@ public class DbReaderFactory {
         switch (GeneratorConfig.getDbType()) {
             case MYSQL:
                 // if database is MYSQL
-                dbReader = null;
+                dbReader = new MysqlDbReader();
                 break;
 //                if database is ORACLE
             case ORACLE:
