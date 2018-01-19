@@ -2,7 +2,10 @@ package cn.yastarter.generator.core.util;
 
 import cn.yastarter.generator.core.common.Constant;
 
+
 import java.sql.Types;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * @author OovEver
@@ -98,6 +101,37 @@ public class ConvertUtil {
             result.append(camelCaseName.substring(1));
         }
         return result.toString();
+    }
+
+    /**
+     * convert database table in database to controller url
+     * @param nameInDb database table name
+     * @return controller url
+     */
+    public static String convert2RequestMapping(String nameInDb) {
+        StringBuilder requestMapping = new StringBuilder();
+        String[] requestMappingArr = nameInDb.split(Constant.SIGN_UNDERLINE);
+        for (String requestMappingPart : requestMappingArr) {
+            if (requestMappingPart.length() == 0) {
+                continue;
+            }
+            requestMapping.append(requestMappingPart);
+            requestMapping.append(Constant.SIGN_SLASH);
+        }
+        return requestMapping.toString();
+    }
+
+    /**
+     * convert database table to RequestMapping
+     * @param tableNameVariable tableNameVariable
+     * @return controller url
+     */
+    public static List<String> convert2RequestMappingForCtl(String tableNameVariable){
+        List<String> requestMapping = new ArrayList<>();
+        for (Constant.MappingType mappingType : Constant.MappingType.values()) {
+            requestMapping.add(tableNameVariable+Constant.SIGN_UNDERLINE+mappingType);
+        }
+        return requestMapping;
     }
     /**
      * convert a char to upperCase

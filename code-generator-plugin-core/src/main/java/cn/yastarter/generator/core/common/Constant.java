@@ -30,4 +30,11 @@ public class Constant {
          */
         ORACLE
     }
+//request mapping type
+    public enum MappingType {
+        post,
+        delete,
+        put,
+        get
+    }
 }

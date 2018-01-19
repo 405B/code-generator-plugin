@@ -3,6 +3,7 @@ package cn.yastarter.generator.core.generator.dbGenerator;
 import cn.yastarter.generator.core.bean.Table;
 import cn.yastarter.generator.core.common.Constant;
 import cn.yastarter.generator.core.config.GeneratorConfig;
+import cn.yastarter.generator.core.generator.codeGenerate.controller.MysqlControllerGenerator;
 import cn.yastarter.generator.core.generator.codeGenerate.pojo.MysqlPoJoGenerator;
 import cn.yastarter.generator.core.generator.dbGenerator.DbGenerator;
 import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
@@ -54,6 +55,10 @@ public class MysqlGenerator implements DbGenerator {
 //        generator pojo code
         if (GeneratorConfig.isGeneratePojo()) {
             MysqlPoJoGenerator.generate(table, systemPackage, javaOutputDir);
+        }
+//        generator controller code
+        if (GeneratorConfig.isGenerateController()) {
+            MysqlControllerGenerator.generate(table, basePackage, systemPackage, javaOutputDir);
         }
     }
 

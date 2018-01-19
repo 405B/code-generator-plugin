@@ -1,12 +1,14 @@
 package ${systemPackage}.${layer.layerNamePojo};
+import java.io.Serializable;
 import lombok.Data;
 
 
 @Data
-public class ${tableNameClass}${layer.classSuffixPojo}{
+public class ${tableNameClass}${layer.classSuffixPojo} implements Serializable{
 #foreach ($column in $columnList)
     private ${column.columnType} ${column.columnNameVariable};
 #end
     public ${tableNameClass}${layer.classSuffixPojo}() {
+
     }
 }

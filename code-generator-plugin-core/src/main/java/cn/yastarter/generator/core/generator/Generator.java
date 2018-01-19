@@ -26,7 +26,7 @@ public class Generator {
      * @param layerClassSuffix layer suffix
      * @return output filePath
      */
-    protected static String generateOutputFilePath(String className, String outputDir, String layer, String layerClassSuffix) {
+    public static String generateOutputFilePath(String className, String outputDir, String layer, String layerClassSuffix) {
         StringBuilder outputFilePath = new StringBuilder(outputDir);
         outputFilePath.append(layer);
         new File(outputFilePath.toString()).mkdir();
@@ -41,7 +41,7 @@ public class Generator {
      * @param context velocity config
      * @param outputFilepath output file location
      */
-    protected static void write2FileBySchema(String templateFile, VelocityContext context, String outputFilepath) {
+    public static void write2FileBySchema(String templateFile, VelocityContext context, String outputFilepath) {
         System.out.println(GeneratorConfig.getGenerateTemplateLocation().concat(templateFile));
 
         Template template = getTemplate(GeneratorConfig.getGenerateTemplateLocation().concat(templateFile));

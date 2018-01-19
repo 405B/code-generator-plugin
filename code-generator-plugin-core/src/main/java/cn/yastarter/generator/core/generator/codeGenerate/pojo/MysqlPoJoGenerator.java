@@ -3,7 +3,6 @@ package cn.yastarter.generator.core.generator.codeGenerate.pojo;
 import cn.yastarter.generator.core.bean.Layer;
 import cn.yastarter.generator.core.bean.Table;
 import cn.yastarter.generator.core.config.GeneratorConfig;
-import cn.yastarter.generator.core.config.VelocityConfig;
 import cn.yastarter.generator.core.generator.Generator;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.velocity.VelocityContext;

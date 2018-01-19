@@ -1,0 +1,31 @@
+package ${systemPackage}.${layer.layerNameController};
+
+import org.springframework.data.domain.Page;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+import ${systemPackage}.${layer.layerNamePojo}.${tableNameClass}${layer.classSuffixPojo};
+import ${systemPackage}.${layer.layerNameService}.${tableNameClass}${layer.classSuffixService};
+
+import javax.annotation.Resource;
+import java.util.Map;
+
+
+@RestController
+@RequestMapping("/${tableNameVariable}")
+public class ${tableNameClass}${layer.classSuffixController} {
+    @Resource
+    private ${tableNameClass}${layer.classSuffixService} ${tableNameVariable}${layer.classSuffixService};
+
+    @RequestMapping(value="/${requestMapping[0]}",method = RequestMethod.POST)
+    public String ${tableNameClass}$Put(${tableNameClass}${layer.classSuffixPojo} ${tableNameVariable}${layer.classSuffixPojo}){
+
+    return ${tableNameVariable}${layer.classSuffixService}.add( ${tableNameVariable}${layer.classSuffixPojo} );
+
+    }
+#if($primaryKey)
+
+#end
+
+}

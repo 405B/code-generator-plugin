@@ -37,6 +37,10 @@ public class Table {
      * Field list of table
      */
     private final List<Column> columnList;
+    /**
+     * @RequestMapping for generate controller
+     */
+    private final List<String> tableRequestMapping;
     public Table(String tableName, String primaryKeyName, Map<String, Column> columnMap) {
         this.tableNameDb = tableName;
         if (primaryKeyName != null) {
@@ -56,6 +60,7 @@ public class Table {
         }
         this.tableNameClass = ConvertUtil.convert2CamelCase(tableName);
         this.tableNameVariable = ConvertUtil.convert2VariableName(tableNameClass);
+        this.tableRequestMapping = ConvertUtil.convert2RequestMappingForCtl(tableNameVariable);
     }
     /**
      *
@@ -96,5 +101,9 @@ public class Table {
 
     public List<Column> getColumnList() {
         return columnList;
+    }
+
+    public List<String> getTableRequestMapping() {
+        return tableRequestMapping;
     }
 }
