@@ -19,13 +19,24 @@ public class ${tableNameClass}${layer.classSuffixController} {
     private ${tableNameClass}${layer.classSuffixService} ${tableNameVariable}${layer.classSuffixService};
 
     @RequestMapping(value="/${requestMapping[0]}",method = RequestMethod.POST)
-    public String ${tableNameClass}$Put(${tableNameClass}${layer.classSuffixPojo} ${tableNameVariable}${layer.classSuffixPojo}){
+    public String ${tableNameClass}Put(${tableNameClass}${layer.classSuffixPojo} ${tableNameVariable}${layer.classSuffixPojo}){
 
     return ${tableNameVariable}${layer.classSuffixService}.add( ${tableNameVariable}${layer.classSuffixPojo} );
 
     }
 #if($primaryKey)
-
+    @RequestMapping(value="/${requestMapping[2]}",method = RequestMethod.PUT)
+    public boolean updateBy${primaryKey.pkName}(${tableNameClass}${layer.classSuffixPojo} ${tableNameVariable}${layer.classSuffixPojo}) {
+    return ${tableNameVariable}${layer.classSuffixService}.updateBy${primaryKey.pkName}( ${tableNameVariable}${layer.classSuffixPojo} );
+    }
+    @RequestMapping(value="/${requestMapping[1]}",method = RequestMethod.DELETE)
+    public boolean removeBy${primaryKey.pkName}(@PathVariable("${primaryKey.pkNameVariable}") ${primaryKey.pkType} ${primaryKey.pkNameVariable}) {
+    return ${tableNameVariable}${layer.classSuffixService}.removeBy${primaryKey.pkName}( ${primaryKey.pkNameVariable} );
+    }
+    @RequestMapping(value="/${requestMapping[3]}",method = RequestMethod.GET)
+    public ${tableNameClass}${layer.classSuffixPojo} getBy${primaryKey.pkName}(@PathVariable("${primaryKey.pkNameVariable}") ${primaryKey.pkType} ${primaryKey.pkNameVariable}) {
+    return ${tableNameVariable}${layer.classSuffixService}.getBy${primaryKey.pkName}( ${primaryKey.pkNameVariable} );
+    }
 #end
 
 }

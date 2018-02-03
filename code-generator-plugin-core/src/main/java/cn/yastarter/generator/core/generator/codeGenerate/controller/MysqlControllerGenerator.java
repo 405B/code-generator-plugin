@@ -3,13 +3,9 @@ package cn.yastarter.generator.core.generator.codeGenerate.controller;
 import cn.yastarter.generator.core.bean.Layer;
 import cn.yastarter.generator.core.bean.Table;
 import cn.yastarter.generator.core.config.GeneratorConfig;
-import cn.yastarter.generator.core.util.ConvertUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.velocity.VelocityContext;
 
-import javax.xml.transform.Templates;
-import java.util.HashMap;
-import java.util.Map;
 
 import static cn.yastarter.generator.core.generator.Generator.generateOutputFilePath;
 import static cn.yastarter.generator.core.generator.Generator.write2FileBySchema;
