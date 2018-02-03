@@ -1,0 +1,30 @@
+package ${systemPackage}.${layer.layerNameService};
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageImpl;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.stereotype.Service;
+
+import ${systemPackage}.${layer.layerNameDao}.${tableNameClass}${layer.classSuffixDao};
+import ${systemPackage}.${layer.layerNamePojo}.${tableNameClass}${layer.classSuffixPojo};
+
+import javax.annotation.Resource;
+import java.util.List;
+import java.util.Map;
+@Service
+public class ${tableNameClass}${layer.classSuffixBiz} {
+    @Resource
+    private ${tableNameClass}${layer.classSuffixDao} ${tableNameVariable}${layer.classSuffixDao};
+
+    public boolean create(${tableNameClass}${layer.classSuffixPojo} ${tableNameVariable}${layer.classSuffixPojo}) {
+    return ${tableNameVariable}${layer.classSuffixDao}.insert(  ${tableNameVariable}${layer.classSuffixPojo} ) > 0;
+    }
+#if($primaryKey)
+    public boolean updateBy${primaryKey.pkName}(${tableNameClass}${layer.classSuffixPojo} ${tableNameVariable}${layer.classSuffixPojo}) {
+    return ${tableNameVariable}${layer.classSuffixDao}.updateBy${primaryKey.pkName}( ${tableNameVariable}${layer.classSuffixPojo} ) > 0;
+    }
+    public boolean removeBy${primaryKey.pkName}(${primaryKey.pkType} ${primaryKey.pkNameVariable}) {
+    return ${tableNameVariable}${layer.classSuffixDao}.deleteBy${primaryKey.pkName}( ${primaryKey.pkNameVariable} ) > 0;
+    }
+#end
+}

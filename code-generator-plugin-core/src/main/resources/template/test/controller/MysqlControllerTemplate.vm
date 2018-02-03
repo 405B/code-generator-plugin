@@ -33,10 +33,12 @@ public class ${tableNameClass}${layer.classSuffixController} {
     public boolean removeBy${primaryKey.pkName}(@PathVariable("${primaryKey.pkNameVariable}") ${primaryKey.pkType} ${primaryKey.pkNameVariable}) {
     return ${tableNameVariable}${layer.classSuffixService}.removeBy${primaryKey.pkName}( ${primaryKey.pkNameVariable} );
     }
+#end
     @RequestMapping(value="/${requestMapping[3]}",method = RequestMethod.GET)
     public ${tableNameClass}${layer.classSuffixPojo} getBy${primaryKey.pkName}(@PathVariable("${primaryKey.pkNameVariable}") ${primaryKey.pkType} ${primaryKey.pkNameVariable}) {
     return ${tableNameVariable}${layer.classSuffixService}.getBy${primaryKey.pkName}( ${primaryKey.pkNameVariable} );
     }
-#end
-
+    public ${tableNameClass}${layer.classSuffixPojo} getBy${primaryKey.pkName}(${primaryKey.pkType} ${primaryKey.pkNameVariable}) {
+    return ${tableNameVariable}${layer.classSuffixDao}.selectBy${primaryKey.pkName}( ${primaryKey.pkNameVariable} );
+    }
 }
