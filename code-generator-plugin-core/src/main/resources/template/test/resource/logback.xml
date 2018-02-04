@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--Not real-time view logback running-->
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <!-- TRACE < DEBUG < INFO < WARN < ERROR -->
+
+
+    <!--console-->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <encoding>UTF-8</encoding>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{40} - %msg%n</pattern>
+        </encoder>
+        <!--Filter TRACE-level logs-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+    </appender>
+
+
+    <!--basic-->
+    <appender name="code-generator" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/code-generator.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>logs/code-generator.log.%i.log.gz</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>10</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>10MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{40} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <!--error-->
+    <appender name="error" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>logs/error/error.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <fileNamePattern>logs/error.log.%i.gz</fileNamePattern>
+            <minIndex>1</minIndex>
+            <maxIndex>10</maxIndex>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>10MB</maxFileSize>
+        </triggeringPolicy>
+        <encoder>
+            <pattern>[%d{HH:mm:ss.SSS}][%p][%c{40}][%t] %m%n</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <logger name="com.oovever" additivity="false" level="INFO" >
+        <appender-ref ref="code-generator" />
+        <appender-ref ref="console"/>
+        <appender-ref ref="error"/>
+    </logger>
+
+    <root level="DEBUG">
+        <appender-ref ref="code-generator" />
+        <appender-ref ref="console"/>
+        <appender-ref ref="error"/>
+    </root>
+</configuration>

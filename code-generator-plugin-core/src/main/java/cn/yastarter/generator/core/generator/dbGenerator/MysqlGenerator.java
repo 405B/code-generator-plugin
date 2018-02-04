@@ -1,17 +1,21 @@
 package cn.yastarter.generator.core.generator.dbGenerator;
 
+import cn.yastarter.generator.core.bean.MybatisMapper;
 import cn.yastarter.generator.core.bean.Table;
 import cn.yastarter.generator.core.common.Constant;
 import cn.yastarter.generator.core.config.GeneratorConfig;
 import cn.yastarter.generator.core.generator.codeGenerate.controller.MysqlControllerGenerator;
 import cn.yastarter.generator.core.generator.codeGenerate.dao.MysqlDaoGenerator;
+import cn.yastarter.generator.core.generator.codeGenerate.dao.MysqlDaoMapperGenerator;
 import cn.yastarter.generator.core.generator.codeGenerate.pojo.MysqlPoJoGenerator;
+import cn.yastarter.generator.core.generator.codeGenerate.resource.MybatisConfigGenerator;
 import cn.yastarter.generator.core.generator.codeGenerate.service.MysqlServiceGenerator;
 import cn.yastarter.generator.core.generator.dbGenerator.DbGenerator;
 import com.sun.xml.internal.bind.v2.runtime.reflect.opt.Const;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -68,6 +72,7 @@ public class MysqlGenerator implements DbGenerator {
             // generator dao code
             if (GeneratorConfig.isGenerateDao()) {
                 MysqlDaoGenerator.generate(table, basePackage, systemPackage, javaOutputDir);
+                MysqlDaoMapperGenerator.generate(table, systemPackage, mapperOutputDir);
 
             }
         }
@@ -79,6 +84,15 @@ public class MysqlGenerator implements DbGenerator {
      */
     @Override
     public void generateConfig(List<Table> tableList) {
-
+        if (GeneratorConfig.isGenerateResource()) {
+            List<MybatisMapper> mybatisMapperList = new ArrayList<>();
+            for (Table table : tableList) {
+                mybatisMapperList.add(new MybatisMapper(table.getTableNameClass(), table.getModleName()));
+            }
+            // basePackage path
+            String basePackage = GeneratorConfig.getBasePackage();
+            String mapperOutputDir = GeneratorConfig.getOutputDir().concat(Constant.SOURCE_RESOURCE);
+            MybatisConfigGenerator.generate(mybatisMapperList, basePackage, mapperOutputDir);
+        }
     }
 }

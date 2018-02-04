@@ -3,6 +3,8 @@ package cn.yastarter.generator.core;
 import cn.yastarter.generator.core.bean.Table;
 import cn.yastarter.generator.core.config.GeneratorConfig;
 import cn.yastarter.generator.core.config.VelocityConfig;
+import cn.yastarter.generator.core.generator.codeGenerate.resource.LogConfigGenerator;
+import cn.yastarter.generator.core.generator.codeGenerate.resource.PomGenerator;
 import cn.yastarter.generator.core.generator.dbGenerator.DbGenerator;
 import cn.yastarter.generator.core.generator.dbGenerator.DbGeneratorFactory;
 import cn.yastarter.generator.core.generator.reader.DbReader;
@@ -43,6 +45,15 @@ public class Main {
         for (Table table : tableList) {
 //            generate each table
             dbGenerator.generate(table);
+        }
+        // generate config code
+        dbGenerator.generateConfig(tableList);
+
+        try {
+            LogConfigGenerator.generateRes();
+            PomGenerator.generate();
+        } catch (IOException e) {
+            log.error("log file generate error", e);
         }
     }
 }
