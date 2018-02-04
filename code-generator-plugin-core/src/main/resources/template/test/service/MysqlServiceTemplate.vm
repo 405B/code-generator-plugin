@@ -1,8 +1,5 @@
 package ${systemPackage}.${layer.layerNameService};
 
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import ${systemPackage}.${layer.layerNameDao}.${tableNameClass}${layer.classSuffixDao};
@@ -12,7 +9,7 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 @Service
-public class ${tableNameClass}${layer.classSuffixBiz} {
+public class ${tableNameClass}${layer.classSuffixService} {
     @Resource
     private ${tableNameClass}${layer.classSuffixDao} ${tableNameVariable}${layer.classSuffixDao};
 
@@ -25,6 +22,9 @@ public class ${tableNameClass}${layer.classSuffixBiz} {
     }
     public boolean removeBy${primaryKey.pkName}(${primaryKey.pkType} ${primaryKey.pkNameVariable}) {
     return ${tableNameVariable}${layer.classSuffixDao}.deleteBy${primaryKey.pkName}( ${primaryKey.pkNameVariable} ) > 0;
+    }
+    public ${tableNameClass}${layer.classSuffixPojo} getBy${primaryKey.pkName}(${primaryKey.pkType} ${primaryKey.pkNameVariable}) {
+    return ${tableNameVariable}${layer.classSuffixDao}.selectBy${primaryKey.pkName}( ${primaryKey.pkNameVariable} );
     }
 #end
 }

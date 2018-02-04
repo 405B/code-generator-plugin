@@ -357,3 +357,13 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Unknown database 'blo
 	at cn.yastarter.generator.core.generator.reader.MysqlDbReader.getTableNames(MysqlDbReader.java:31)
 	at cn.yastarter.generator.core.generator.reader.AbstractDbReader.getTableBeans(AbstractDbReader.java:26)
 	at cn.yastarter.generator.core.Main.main(Main.java:40)
+[21:58:28.259][ERROR][c.y.generator.core.generator.Generator][main] syntax error in template test/service/MysqlServiceTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " .pkName}( " at test/service/MysqlServiceTemplate.vm[line 27, column 76]
+Was expecting one of:
+    "[" ...
+    "}" ...
+    
+[21:58:56.247][ERROR][c.y.generator.core.generator.Generator][main] syntax error in template test/service/MysqlServiceTemplate.vm:org.apache.velocity.exception.ParseErrorException: Encountered " .pkName}( " at test/service/MysqlServiceTemplate.vm[line 27, column 76]
+Was expecting one of:
+    "[" ...
+    "}" ...
+    

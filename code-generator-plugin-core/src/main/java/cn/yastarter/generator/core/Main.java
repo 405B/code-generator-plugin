@@ -5,6 +5,7 @@ import cn.yastarter.generator.core.config.GeneratorConfig;
 import cn.yastarter.generator.core.config.VelocityConfig;
 import cn.yastarter.generator.core.generator.codeGenerate.resource.LogConfigGenerator;
 import cn.yastarter.generator.core.generator.codeGenerate.resource.PomGenerator;
+import cn.yastarter.generator.core.generator.codeGenerate.resource.PropertiesGenerator;
 import cn.yastarter.generator.core.generator.dbGenerator.DbGenerator;
 import cn.yastarter.generator.core.generator.dbGenerator.DbGeneratorFactory;
 import cn.yastarter.generator.core.generator.reader.DbReader;
@@ -52,6 +53,7 @@ public class Main {
         try {
             LogConfigGenerator.generateRes();
             PomGenerator.generate();
+            PropertiesGenerator.generateRes();
         } catch (IOException e) {
             log.error("log file generate error", e);
         }

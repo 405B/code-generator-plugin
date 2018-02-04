@@ -1,6 +1,6 @@
 package ${systemPackage}.${layer.layerNameController};
 
-import org.springframework.data.domain.Page;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,9 +19,9 @@ public class ${tableNameClass}${layer.classSuffixController} {
     private ${tableNameClass}${layer.classSuffixService} ${tableNameVariable}${layer.classSuffixService};
 
     @RequestMapping(value="/${requestMapping[0]}",method = RequestMethod.POST)
-    public String ${tableNameClass}Put(${tableNameClass}${layer.classSuffixPojo} ${tableNameVariable}${layer.classSuffixPojo}){
+    public boolean ${tableNameClass}Put(${tableNameClass}${layer.classSuffixPojo} ${tableNameVariable}${layer.classSuffixPojo}){
 
-    return ${tableNameVariable}${layer.classSuffixService}.add( ${tableNameVariable}${layer.classSuffixPojo} );
+    return ${tableNameVariable}${layer.classSuffixService}.create( ${tableNameVariable}${layer.classSuffixPojo} );
 
     }
 #if($primaryKey)
@@ -37,8 +37,5 @@ public class ${tableNameClass}${layer.classSuffixController} {
     @RequestMapping(value="/${requestMapping[3]}",method = RequestMethod.GET)
     public ${tableNameClass}${layer.classSuffixPojo} getBy${primaryKey.pkName}(@PathVariable("${primaryKey.pkNameVariable}") ${primaryKey.pkType} ${primaryKey.pkNameVariable}) {
     return ${tableNameVariable}${layer.classSuffixService}.getBy${primaryKey.pkName}( ${primaryKey.pkNameVariable} );
-    }
-    public ${tableNameClass}${layer.classSuffixPojo} getBy${primaryKey.pkName}(${primaryKey.pkType} ${primaryKey.pkNameVariable}) {
-    return ${tableNameVariable}${layer.classSuffixDao}.selectBy${primaryKey.pkName}( ${primaryKey.pkNameVariable} );
     }
 }
