@@ -1,6 +1,7 @@
 package cn.yastarter.generator.core;
 
 import cn.yastarter.generator.core.bean.Table;
+import cn.yastarter.generator.core.common.Constant;
 import cn.yastarter.generator.core.config.GeneratorConfig;
 import cn.yastarter.generator.core.config.VelocityConfig;
 import cn.yastarter.generator.core.generator.codeGenerate.ApplicationGenerator;
@@ -25,20 +26,23 @@ public class Main {
     public static void main(String[] args) {
         GeneratorConfig.init();
         VelocityConfig.init();
-        try {
-//            based on output dir create new folder
-            FileUtils.forceMkdir(new File(GeneratorConfig.getOutputDir()));
-            log.info("base folder create completed");
-        } catch (IOException e) {
-            log.error("can not create new folder", e);
-        }
-//        Clean up all the contents of the folder
+        //        Clean up all the contents of the folder
         try {
             FileUtils.cleanDirectory(new File(GeneratorConfig.getOutputDir()));
             log.info("base folder clean completed");
         } catch (IOException e) {
             log.error("can not clean folder", e);
         }
+        try {
+//            based on output dir create new folder
+            FileUtils.forceMkdir(new File(GeneratorConfig.getOutputDir()));
+            log.info("base folder create completed");
+            FileUtils.forceMkdir(new File(GeneratorConfig.getOutputDir()+Constant.SIGN_SLASH+ Constant.SOURCE_JAVA_TEST));
+            log.info("test folder create completed");
+        } catch (IOException e) {
+            log.error("can not create new folder", e);
+        }
+
 //        Get the corresponding database instance
         DbReader    dbReader    = DbReaderFactory.createDbReader();
         List<Table> tableList   = dbReader.getTableBeans();

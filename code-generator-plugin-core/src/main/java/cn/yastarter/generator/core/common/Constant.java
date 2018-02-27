@@ -16,6 +16,7 @@ public class Constant {
     public static final String SOURCE_JAVA = "src/main/java/";
     public static final String SOURCE_RESOURCE = "src/main/resources/";
     public static final String SOURCE_RESOURCE_MAPPER = "src/main/resources/mapper/";
+    public static final String SOURCE_JAVA_TEST = "src/test/";
 
     public static final String LAYER_COMMON = "common";
 
