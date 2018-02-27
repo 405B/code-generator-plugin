@@ -1,0 +1,6 @@
+#####  mysql config ###############################################################################
+spring.datasource.type=com.zaxxer.hikari.HikariDataSource
+spring.datasource.url=${dbUrl}?useUnicode=true&amp;characterEncoding=utf-8;&useSSL=false
+spring.datasource.username=${dbUserName}
+spring.datasource.password=${dbPassword}
+spring.datasource.driver-class-name=com.mysql.jdbc.Driver

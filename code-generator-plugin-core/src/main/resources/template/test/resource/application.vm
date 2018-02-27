@@ -1,0 +1,15 @@
+spring.profiles.active=dev
+management.security.enabled=false
+server.port=8080
+
+#####  mybatis config #############################################################################
+mybatis.config-location=classpath:mybatis.xml
+
+#####  tomcat config ##############################################################################
+##max amount of worker threads.
+server.tomcat.max-threads=200
+##Minimum amount of worker threads.
+server.tomcat.min-spare-threads=50
+
+
+

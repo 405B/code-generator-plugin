@@ -6,7 +6,6 @@
 
     <!--console-->
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
-    <encoding>UTF-8</encoding>
         <encoder>
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{40} - %msg%n</pattern>
         </encoder>

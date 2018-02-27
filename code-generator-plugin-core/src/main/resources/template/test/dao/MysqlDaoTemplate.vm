@@ -3,6 +3,9 @@ package ${systemPackage}.${layer.layerNameDao};
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import ${systemPackage}.${layer.layerNamePojo}.${tableNameClass}${layer.classSuffixPojo};
+
+import java.util.List;
+import java.util.Map;
 @Mapper
 public interface ${tableNameClass}${layer.classSuffixDao} {
     int insert(${tableNameClass}${layer.classSuffixPojo} ${tableNameVariable}${layer.classSuffixPojo});
@@ -11,4 +14,5 @@ public interface ${tableNameClass}${layer.classSuffixDao} {
     int deleteBy${primaryKey.pkName}(${primaryKey.pkType} ${primaryKey.pkNameVariable});
     ${tableNameClass}${layer.classSuffixPojo} selectBy${primaryKey.pkName}(${primaryKey.pkType} ${primaryKey.pkNameVariable});
 #end
+    List<${tableNameClass}${layer.classSuffixPojo}> selectAll(Map<String, Object> paramMap);
 }

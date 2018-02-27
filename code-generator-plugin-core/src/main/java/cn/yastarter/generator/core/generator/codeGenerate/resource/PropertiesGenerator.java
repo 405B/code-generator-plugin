@@ -22,16 +22,17 @@ public class PropertiesGenerator  extends Generator {
             log.info("generate properties ...");
             String outputDir = GeneratorConfig.getOutputDir().concat(Constant.SOURCE_RESOURCE);
 
-            String resourcePath = Velocity.getProperty(VelocityEngine.FILE_RESOURCE_LOADER_PATH) + Constant.SIGN_SLASH + GeneratorConfig.getGenerateTemplateLocation() + "/resource";
-
-
+//            String resourcePath = Velocity.getProperty(VelocityEngine.FILE_RESOURCE_LOADER_PATH) + Constant.SIGN_SLASH + GeneratorConfig.getGenerateTemplateLocation() + "/resource";
+//            System.out.println(resourcePath);
+//            Files.copy(Paths.get(resourcePath + "/application.vm"), Paths.get(outputDir + "application.properties"));
             VelocityContext context = new VelocityContext();
             context.put("dbUrl", GeneratorConfig.getDbUrl());
             context.put("dbUserName", GeneratorConfig.getDbUserName());
             context.put("dbPassword", GeneratorConfig.getDbPassword());
             context.put("basePackage", GeneratorConfig.getBasePackage());
             context.put("projectName", GeneratorConfig.getProjectName());
-            write2FileBySchema("/resource/applicationYmlTemplate.vm", context, outputDir + "application.yml");
+            write2FileBySchema("/resource/application.vm", context, outputDir + "application.properties");
+            write2FileBySchema("/resource/applicationDevTemplate.vm", context, outputDir + "application-dev.properties");
         }
     }
 }

@@ -49,7 +49,6 @@
             WHERE ${primaryKey.pkNameDb} = #{${primaryKey.pkNameVariable}}
         </update>
 
-        <!-- TODO 如不使用，开发后请删除此 SQL -->
         <delete id="deleteBy${primaryKey.pkName}" parameterType="${primaryKey.pkType}">
             DELETE FROM $tableNameDb WHERE ${primaryKey.pkNameDb} = #{${primaryKey.pkNameVariable}}
         </delete>
