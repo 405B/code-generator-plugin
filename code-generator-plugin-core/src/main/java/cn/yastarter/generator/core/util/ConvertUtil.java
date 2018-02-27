@@ -138,7 +138,7 @@ public class ConvertUtil {
      * @param c The character to be converted
      * @return upperCase char
      */
-    private static char toUpperCase(char c) {
+    public static char toUpperCase(char c) {
         if (c >= 'a' && c <= 'z') {
             c = (char) (c - 32);
         }
@@ -150,7 +150,7 @@ public class ConvertUtil {
      * @param c The character to be converted
      * @return lowerCase char
      */
-    private static char toLowerCase(char c) {
+    public static char toLowerCase(char c) {
         if (c >= 'A' && c <= 'Z') {
             c = (char) (c + 32);
         }

@@ -3,6 +3,7 @@ package cn.yastarter.generator.core;
 import cn.yastarter.generator.core.bean.Table;
 import cn.yastarter.generator.core.config.GeneratorConfig;
 import cn.yastarter.generator.core.config.VelocityConfig;
+import cn.yastarter.generator.core.generator.codeGenerate.ApplicationGenerator;
 import cn.yastarter.generator.core.generator.codeGenerate.resource.LogConfigGenerator;
 import cn.yastarter.generator.core.generator.codeGenerate.resource.PomGenerator;
 import cn.yastarter.generator.core.generator.codeGenerate.resource.PropertiesGenerator;
@@ -54,6 +55,7 @@ public class Main {
             LogConfigGenerator.generateRes();
             PomGenerator.generate();
             PropertiesGenerator.generateRes();
+            ApplicationGenerator.generateApplication(GeneratorConfig.getBasePackage(),GeneratorConfig.getProjectName());
         } catch (IOException e) {
             log.error("log file generate error", e);
         }
