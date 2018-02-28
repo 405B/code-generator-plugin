@@ -1,8 +1,11 @@
-# code-generator-plugin
-Database (including MySql and Oracle) to the code automatically generated, you can customize the build framework, such as mybatis, springboot, spring and so on. You can also customize your own Velocity template, generate the appropriate code.
-<p align="center">
- <a href="README_CN.md">简体中文</a>
+<p align="left">
+ <a href="README_CN.md">简体中文文档</a>
 </p>
+
+# code-generator-plugin
+
+Database (including MySql and Oracle) to the code automatically generated, you can customize the build framework, such as mybatis, springboot, spring and so on. You can also customize your own Velocity template, generate the appropriate code.
+
 
 
 ## Technology used
@@ -60,17 +63,18 @@ The sample program will generate a project maven project based on spring-boot, m
 ├── src   
 │   ├── main                               
 │   │   ├── java                           
-│   │   │   └── self.aub.product.cgt       // Base package name, corresponding to: $ {base.package}
+│   │   │   └── com.oovever.test           // Base package name, corresponding to: $ {base.package}
 │   │   │       ├── modle1                 // When the module name, $ {separate.modle}, is set to 1, it is possible to generate a module layer
 │   │   │       │   ├── controller         // Control layer package, corresponding to: $ {class.suffix.controller}
 │   │   │       │   ├── service            // Business layer package, corresponding to: $ {class.suffix.service}
 │   │   │       │   ├── dao                //Mapping layer package, corresponding to: $ {class.suffix.dao}
 │   │   │       │   └── pojo               // entity layer package, corresponding to: $ {class.suffix.pojo}
+│   │   │       └── TestApplication.java   // spring boot start the program
 │   │   └── resources                      
 │   │       ├── mapper                     // mybatis mapping package
 │   │       ├── application.properties     // Basic resource documents
 │   │       ├── application-dev.properties // Development environment resource file
-│   │       ├── logback-spring             // logback config file
+│   │       ├── logback-spring.xml             // logback config file
 │   │       └── mybatis.xml                // mybatis configuration file
 │   └── test                               // Unit test package
 └── pom.xml                                // maven package file
