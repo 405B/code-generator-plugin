@@ -133,12 +133,25 @@ public class ConvertUtil {
         }
         return requestMapping;
     }
+
+    /**
+     *  convert string first char to upper
+     *  for example project convert to Project
+     * @param variable need to convert string
+     * @return the string that first char is upper
+     */
+    public static String convertFirstCharUpper(String variable) {
+        if (variable == null) {
+            return null;
+        }
+        return toUpperCase(variable.charAt(0)) + variable.substring(1);
+    }
     /**
      * convert a char to upperCase
      * @param c The character to be converted
      * @return upperCase char
      */
-    public static char toUpperCase(char c) {
+    private static char toUpperCase(char c) {
         if (c >= 'a' && c <= 'z') {
             c = (char) (c - 32);
         }
@@ -150,7 +163,7 @@ public class ConvertUtil {
      * @param c The character to be converted
      * @return lowerCase char
      */
-    public static char toLowerCase(char c) {
+    private static char toLowerCase(char c) {
         if (c >= 'A' && c <= 'Z') {
             c = (char) (c + 32);
         }

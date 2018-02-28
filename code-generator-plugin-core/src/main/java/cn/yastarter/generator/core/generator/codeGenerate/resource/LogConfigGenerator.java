@@ -17,6 +17,10 @@ import java.nio.file.Paths;
  */
 @Slf4j
 public class LogConfigGenerator extends Generator {
+    /**
+     * generate logback config file
+     * @throws IOException file not found
+     */
     public static void generateRes() throws IOException {
         if (GeneratorConfig.isGenerateResource()) {
             log.info("generate log config");

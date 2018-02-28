@@ -7,20 +7,41 @@ import static cn.yastarter.generator.core.common.Constant.JAVA_FILE_SUFFIX;
  * code output layer
  */
 public class Layer {
+//  controller file name Used to generate the controller package
+//    for example controller
     private String layerNameController;
+//    controller file suffix
+//    for example Controller.java
     private String fileSuffixController;
+//    controller class fileSuffix
+//    for example Controller
     private String classSuffixController;
+    //  service file name Used to generate the controller package
     private String layerNameService;
+    //    service file suffix
     private String fileSuffixService;
+    //    service class fileSuffix
     private String classSuffixService;
+    //  dao file name Used to generate the controller package
     private String layerNameDao;
+    //    dao file suffix
     private String fileSuffixDao;
+    //    dao class fileSuffix
     private String classSuffixDao;
+    //  pojo file name Used to generate the controller package
     private String layerNamePojo;
+    //    pojo file suffix
     private String fileSuffixPojo;
+    //    pojo class fileSuffix
     private String classSuffixPojo;
 
-
+    /**
+     *
+     * @param classSuffixController controller file suffix
+     * @param classSuffixService service file suffix
+     * @param classSuffixDao dao file suffix
+     * @param classSuffixPojo pojo file suffix
+     */
     public Layer(String classSuffixController, String classSuffixService, String classSuffixDao, String classSuffixPojo) {
         this.classSuffixController = classSuffixController;
         this.layerNameController = classSuffixController.toLowerCase();
@@ -44,7 +65,7 @@ public class Layer {
         return JAVA_FILE_SUFFIX;
     }
 
-    public String getLayerNameController() {
+        public String getLayerNameController() {
         return layerNameController;
     }
 

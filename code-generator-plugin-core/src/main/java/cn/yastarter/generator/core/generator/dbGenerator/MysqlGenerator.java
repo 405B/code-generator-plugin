@@ -79,7 +79,7 @@ public class MysqlGenerator implements DbGenerator {
     }
 
     /**
-     * generator config file
+     * generate mybatis config file
      * @param tableList all table of project
      */
     @Override

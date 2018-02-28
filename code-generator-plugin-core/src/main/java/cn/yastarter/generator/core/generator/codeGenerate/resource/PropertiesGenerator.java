@@ -14,10 +14,14 @@ import java.nio.file.Paths;
 
 /**
  * Created by OovEver on 2018/2/4.
+ * Generate application.properties and application-dev.properties
  */
 @Slf4j
 public class PropertiesGenerator  extends Generator {
-    public static void generateRes() throws IOException {
+    /**
+     * Generate application.properties and application-dev.properties
+     */
+    public static void generateRes() {
         if (GeneratorConfig.isGenerateResource()) {
             log.info("generate properties ...");
             String outputDir = GeneratorConfig.getOutputDir().concat(Constant.SOURCE_RESOURCE);

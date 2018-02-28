@@ -1,7 +1,6 @@
 package cn.yastarter.generator.core;
 
 import cn.yastarter.generator.core.bean.Table;
-import cn.yastarter.generator.core.common.Constant;
 import cn.yastarter.generator.core.config.GeneratorConfig;
 import cn.yastarter.generator.core.config.VelocityConfig;
 import cn.yastarter.generator.core.generator.codeGenerate.ApplicationGenerator;
@@ -10,41 +9,25 @@ import cn.yastarter.generator.core.generator.codeGenerate.resource.PomGenerator;
 import cn.yastarter.generator.core.generator.codeGenerate.resource.PropertiesGenerator;
 import cn.yastarter.generator.core.generator.dbGenerator.DbGenerator;
 import cn.yastarter.generator.core.generator.dbGenerator.DbGeneratorFactory;
+import cn.yastarter.generator.core.generator.folderGenerator.FolderGenerator;
 import cn.yastarter.generator.core.generator.reader.DbReader;
 import cn.yastarter.generator.core.generator.reader.DbReaderFactory;
-import javafx.scene.control.Tab;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.io.FileUtils;
-import org.apache.velocity.app.VelocityEngine;
-
-import java.io.File;
 import java.io.IOException;
 import java.util.List;
 
 @Slf4j
 public class Main {
     public static void main(String[] args) {
+//      load config file
         GeneratorConfig.init();
+//      init velocity template config
         VelocityConfig.init();
-        //        Clean up all the contents of the folder
-        try {
-            FileUtils.cleanDirectory(new File(GeneratorConfig.getOutputDir()));
-            log.info("base folder clean completed");
-        } catch (IOException e) {
-            log.error("can not clean folder", e);
-        }
-        try {
-//            based on output dir create new folder
-            FileUtils.forceMkdir(new File(GeneratorConfig.getOutputDir()));
-            log.info("base folder create completed");
-            FileUtils.forceMkdir(new File(GeneratorConfig.getOutputDir()+Constant.SIGN_SLASH+ Constant.SOURCE_JAVA_TEST));
-            log.info("test folder create completed");
-        } catch (IOException e) {
-            log.error("can not create new folder", e);
-        }
-
+//      create project folder
+        FolderGenerator.init();
 //        Get the corresponding database instance
         DbReader    dbReader    = DbReaderFactory.createDbReader();
+//        get TableBean information
         List<Table> tableList   = dbReader.getTableBeans();
 //        get mysql generator
         DbGenerator dbGenerator = DbGeneratorFactory.createDbGenerator();
@@ -52,16 +35,18 @@ public class Main {
 //            generate each table
             dbGenerator.generate(table);
         }
-        // generate config code
+        // generate mybatis config file
         dbGenerator.generateConfig(tableList);
-
+        ApplicationGenerator.generateApplication(GeneratorConfig.getBasePackage(),GeneratorConfig.getProjectName());
         try {
+//            logback config file generator
             LogConfigGenerator.generateRes();
+//            pom file generator
             PomGenerator.generate();
+//           application properties generator
             PropertiesGenerator.generateRes();
-            ApplicationGenerator.generateApplication(GeneratorConfig.getBasePackage(),GeneratorConfig.getProjectName());
         } catch (IOException e) {
-            log.error("log file generate error", e);
+            log.error("properties file generate error", e);
         }
     }
 }

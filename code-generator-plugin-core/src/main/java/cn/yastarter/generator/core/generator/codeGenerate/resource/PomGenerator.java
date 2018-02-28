@@ -10,6 +10,9 @@ import org.apache.velocity.VelocityContext;
  */
 @Slf4j
 public class PomGenerator extends Generator {
+    /**
+     * generate pom file
+     */
     public static void generate() {
         log.info("generate pom ...");
         VelocityContext context = new VelocityContext();
