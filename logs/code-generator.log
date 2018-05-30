@@ -139,3 +139,209 @@
 2018-03-01 00:47:47.305 [main] INFO  c.y.g.c.g.c.resource.LogConfigGenerator - generate log config
 2018-03-01 00:47:47.340 [main] INFO  c.y.g.c.g.c.resource.PomGenerator - generate pom ...
 2018-03-01 00:47:47.348 [main] INFO  c.y.g.c.g.c.resource.PropertiesGenerator - generate properties ...
+2018-04-07 14:49:06.685 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-04-07 14:49:06.726 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-04-07 14:49:07.140 [main] INFO  c.y.g.c.g.f.FolderGenerator - base folder clean completed
+2018-04-07 14:49:07.140 [main] INFO  c.y.g.c.g.f.FolderGenerator - base folder create completed
+2018-04-07 14:49:07.142 [main] INFO  c.y.g.c.g.f.FolderGenerator - test folder create completed
+2018-04-07 14:49:07.665 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-04-07 14:49:07.666 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-04-07 14:49:07.666 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-04-07 14:49:07.727 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-04-07 14:49:07.745 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-04-07 14:49:07.746 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-04-07 14:49:07.780 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-04-07 14:49:07.788 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-04-07 14:49:07.788 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-04-07 14:49:07.788 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-04-07 14:49:07.797 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-04-07 14:49:07.805 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-04-07 14:49:07.805 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-04-07 14:49:07.805 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-04-07 14:49:07.808 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-04-07 14:49:07.813 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp1/generator-result/src/main/java/com/oovever/test/
+2018-04-07 14:49:07.815 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp1/generator-result/src/main/resources/mapper/
+2018-04-07 14:49:07.816 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-04-07 14:49:07.840 [main] INFO  c.y.g.c.g.c.c.MysqlControllerGenerator - generate controller : CategoryController.java
+2018-04-07 14:49:07.851 [main] INFO  c.y.g.c.g.c.s.MysqlServiceGenerator - generate service : CategoryService.java
+2018-04-07 14:49:07.857 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoGenerator - generate dao : CategoryDao.java
+2018-04-07 14:49:07.863 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoMapperGenerator - generate mapper: Category.xml
+2018-04-07 14:49:07.879 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-04-07 14:49:07.879 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp1/generator-result/src/main/java/com/oovever/test/
+2018-04-07 14:49:07.879 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp1/generator-result/src/main/resources/mapper/
+2018-04-07 14:49:07.879 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-04-07 14:49:07.884 [main] INFO  c.y.g.c.g.c.c.MysqlControllerGenerator - generate controller : ProductController.java
+2018-04-07 14:49:07.893 [main] INFO  c.y.g.c.g.c.s.MysqlServiceGenerator - generate service : ProductService.java
+2018-04-07 14:49:07.899 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoGenerator - generate dao : ProductDao.java
+2018-04-07 14:49:07.904 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoMapperGenerator - generate mapper: Product.xml
+2018-04-07 14:49:07.912 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-04-07 14:49:07.912 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp1/generator-result/src/main/java/com/oovever/test/
+2018-04-07 14:49:07.913 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp1/generator-result/src/main/resources/mapper/
+2018-04-07 14:49:07.913 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java
+2018-04-07 14:49:08.151 [main] INFO  c.y.g.c.g.c.c.MysqlControllerGenerator - generate controller : UserController.java
+2018-04-07 14:49:08.158 [main] INFO  c.y.g.c.g.c.s.MysqlServiceGenerator - generate service : UserService.java
+2018-04-07 14:49:08.164 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoGenerator - generate dao : UserDao.java
+2018-04-07 14:49:08.168 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoMapperGenerator - generate mapper: User.xml
+2018-04-07 14:49:08.176 [main] INFO  c.y.g.c.g.c.r.MybatisConfigGenerator - generate mybatis config
+2018-04-07 14:49:08.185 [main] INFO  c.y.g.c.g.c.ApplicationGenerator - generate ProjectApplication ...
+2018-04-07 14:49:08.188 [main] INFO  c.y.g.c.g.c.ApplicationGenerator - finish generate ProjectApplication
+2018-04-07 14:49:08.188 [main] INFO  c.y.g.c.g.c.resource.LogConfigGenerator - generate log config
+2018-04-07 14:49:08.220 [main] INFO  c.y.g.c.g.c.resource.PomGenerator - generate pom ...
+2018-04-07 14:49:08.223 [main] INFO  c.y.g.c.g.c.resource.PropertiesGenerator - generate properties ...
+2018-04-07 14:49:28.374 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-04-07 14:49:28.377 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-04-07 14:49:30.738 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-04-07 14:49:30.742 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-04-07 14:51:04.000 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-04-07 14:51:04.099 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-04-07 14:52:50.091 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-04-07 14:52:50.094 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-04-07 14:52:50.243 [main] INFO  c.y.g.c.g.f.FolderGenerator - base folder clean completed
+2018-04-07 14:52:50.243 [main] INFO  c.y.g.c.g.f.FolderGenerator - base folder create completed
+2018-04-07 14:52:50.245 [main] INFO  c.y.g.c.g.f.FolderGenerator - test folder create completed
+2018-04-07 14:52:50.559 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-04-07 14:52:50.560 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-04-07 14:52:50.560 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-04-07 14:52:50.570 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-04-07 14:52:50.585 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-04-07 14:52:50.585 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-04-07 14:52:50.595 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-04-07 14:52:50.606 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-04-07 14:52:50.606 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-04-07 14:52:50.606 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-04-07 14:52:50.618 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-04-07 14:52:50.626 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-04-07 14:52:50.627 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-04-07 14:52:50.627 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-04-07 14:52:50.630 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-04-07 14:52:50.637 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp1/generator-result/src/main/java/com/oovever/test/
+2018-04-07 14:52:50.640 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp1/generator-result/src/main/resources/mapper/
+2018-04-07 14:52:50.642 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-04-07 14:52:50.682 [main] INFO  c.y.g.c.g.c.c.MysqlControllerGenerator - generate controller : CategoryController.java
+2018-04-07 14:52:50.715 [main] INFO  c.y.g.c.g.c.s.MysqlServiceGenerator - generate service : CategoryService.java
+2018-04-07 14:52:50.741 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoGenerator - generate dao : CategoryDao.java
+2018-04-07 14:52:50.751 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoMapperGenerator - generate mapper: Category.xml
+2018-04-07 14:52:50.760 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-04-07 14:52:50.760 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp1/generator-result/src/main/java/com/oovever/test/
+2018-04-07 14:52:50.761 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp1/generator-result/src/main/resources/mapper/
+2018-04-07 14:52:50.761 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-04-07 14:52:50.764 [main] INFO  c.y.g.c.g.c.c.MysqlControllerGenerator - generate controller : ProductController.java
+2018-04-07 14:52:50.769 [main] INFO  c.y.g.c.g.c.s.MysqlServiceGenerator - generate service : ProductService.java
+2018-04-07 14:52:50.773 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoGenerator - generate dao : ProductDao.java
+2018-04-07 14:52:50.776 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoMapperGenerator - generate mapper: Product.xml
+2018-04-07 14:52:50.781 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-04-07 14:52:50.781 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp1/generator-result/src/main/java/com/oovever/test/
+2018-04-07 14:52:50.781 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp1/generator-result/src/main/resources/mapper/
+2018-04-07 14:52:50.781 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java
+2018-04-07 14:52:50.789 [main] INFO  c.y.g.c.g.c.c.MysqlControllerGenerator - generate controller : UserController.java
+2018-04-07 14:52:50.794 [main] INFO  c.y.g.c.g.c.s.MysqlServiceGenerator - generate service : UserService.java
+2018-04-07 14:52:50.800 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoGenerator - generate dao : UserDao.java
+2018-04-07 14:52:50.805 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoMapperGenerator - generate mapper: User.xml
+2018-04-07 14:52:50.813 [main] INFO  c.y.g.c.g.c.r.MybatisConfigGenerator - generate mybatis config
+2018-04-07 14:52:50.879 [main] INFO  c.y.g.c.g.c.ApplicationGenerator - generate ProjectApplication ...
+2018-04-07 14:52:50.882 [main] INFO  c.y.g.c.g.c.ApplicationGenerator - finish generate ProjectApplication
+2018-04-07 14:52:50.882 [main] INFO  c.y.g.c.g.c.resource.LogConfigGenerator - generate log config
+2018-04-07 14:52:50.929 [main] INFO  c.y.g.c.g.c.resource.PomGenerator - generate pom ...
+2018-04-07 14:52:50.931 [main] INFO  c.y.g.c.g.c.resource.PropertiesGenerator - generate properties ...
+2018-04-07 14:59:43.564 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-04-07 15:02:40.304 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-04-07 15:03:14.844 [main] ERROR c.y.g.c.g.f.FolderGenerator - can not clean folder
+java.io.IOException: Unable to delete directory d:\tmp1\generator-result\src\main\java\com\oovever.
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1623)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at org.apache.commons.io.FileUtils.deleteDirectory(FileUtils.java:1617)
+	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2391)
+	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1721)
+	at cn.yastarter.generator.core.generator.folderGenerator.FolderGenerator.init(FolderGenerator.java:24)
+	at cn.yastarter.generator.core.Main.main(Main.java:27)
+2018-04-07 15:03:20.744 [main] INFO  c.y.g.c.g.f.FolderGenerator - base folder create completed
+2018-04-07 15:03:21.640 [main] INFO  c.y.g.c.g.f.FolderGenerator - test folder create completed
+2018-04-07 15:04:00.582 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-04-07 15:04:00.585 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-04-07 15:04:00.586 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-04-07 15:04:57.722 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-04-07 15:04:59.728 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-04-07 15:04:59.729 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-04-07 15:06:01.126 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-04-07 15:06:01.157 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-04-07 15:06:01.158 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-04-07 15:06:01.158 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-04-07 15:06:01.936 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-04-07 15:06:01.969 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-04-07 15:06:01.970 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-04-07 15:06:01.971 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-04-07 15:07:00.545 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-04-07 15:08:51.498 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp1/generator-result/src/main/java/com/oovever/test/
+2018-04-07 15:08:58.327 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp1/generator-result/src/main/resources/mapper/
+2018-04-07 15:09:31.161 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-04-07 15:12:31.217 [main] INFO  c.y.g.c.g.c.c.MysqlControllerGenerator - generate controller : CategoryController.java
+2018-04-07 15:12:31.253 [main] INFO  c.y.g.c.g.c.s.MysqlServiceGenerator - generate service : CategoryService.java
+2018-04-07 15:12:31.329 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoGenerator - generate dao : CategoryDao.java
+2018-04-07 15:12:31.359 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoMapperGenerator - generate mapper: Category.xml
+2018-04-07 15:12:31.375 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-04-07 15:12:31.375 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp1/generator-result/src/main/java/com/oovever/test/
+2018-04-07 15:12:31.375 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp1/generator-result/src/main/resources/mapper/
+2018-04-07 15:12:31.375 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-04-07 15:12:31.380 [main] INFO  c.y.g.c.g.c.c.MysqlControllerGenerator - generate controller : ProductController.java
+2018-04-07 15:12:31.387 [main] INFO  c.y.g.c.g.c.s.MysqlServiceGenerator - generate service : ProductService.java
+2018-04-07 15:12:31.395 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoGenerator - generate dao : ProductDao.java
+2018-04-07 15:12:31.400 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoMapperGenerator - generate mapper: Product.xml
+2018-04-07 15:12:50.655 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-04-07 15:12:50.658 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-04-07 15:12:50.781 [main] INFO  c.y.g.c.g.f.FolderGenerator - base folder clean completed
+2018-04-07 15:12:50.781 [main] INFO  c.y.g.c.g.f.FolderGenerator - base folder create completed
+2018-04-07 15:12:50.784 [main] INFO  c.y.g.c.g.f.FolderGenerator - test folder create completed
+2018-04-07 15:12:50.995 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-04-07 15:12:50.996 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-04-07 15:12:50.996 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-04-07 15:12:51.010 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-04-07 15:12:51.024 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-04-07 15:12:51.024 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-04-07 15:12:51.035 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-04-07 15:12:51.044 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-04-07 15:12:51.044 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-04-07 15:12:51.044 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-04-07 15:12:51.053 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-04-07 15:12:51.063 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-04-07 15:12:51.064 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-04-07 15:12:51.064 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
+2018-04-07 15:12:51.065 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : category 
+2018-04-07 15:12:51.072 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp1/generator-result/src/main/java/com/oovever/test/
+2018-04-07 15:12:51.075 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp1/generator-result/src/main/resources/mapper/
+2018-04-07 15:12:51.076 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : CategoryPojo.java
+2018-04-07 15:12:51.094 [main] INFO  c.y.g.c.g.c.c.MysqlControllerGenerator - generate controller : CategoryController.java
+2018-04-07 15:12:51.105 [main] INFO  c.y.g.c.g.c.s.MysqlServiceGenerator - generate service : CategoryService.java
+2018-04-07 15:12:51.111 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoGenerator - generate dao : CategoryDao.java
+2018-04-07 15:12:51.117 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoMapperGenerator - generate mapper: Category.xml
+2018-04-07 15:12:51.129 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : product 
+2018-04-07 15:12:51.130 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp1/generator-result/src/main/java/com/oovever/test/
+2018-04-07 15:12:51.130 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp1/generator-result/src/main/resources/mapper/
+2018-04-07 15:12:51.130 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : ProductPojo.java
+2018-04-07 15:12:51.135 [main] INFO  c.y.g.c.g.c.c.MysqlControllerGenerator - generate controller : ProductController.java
+2018-04-07 15:12:51.141 [main] INFO  c.y.g.c.g.c.s.MysqlServiceGenerator - generate service : ProductService.java
+2018-04-07 15:12:51.147 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoGenerator - generate dao : ProductDao.java
+2018-04-07 15:12:51.149 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoMapperGenerator - generate mapper: Product.xml
+2018-04-07 15:12:51.157 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate code file for table : user 
+2018-04-07 15:12:51.157 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput java dir : d:/tmp1/generator-result/src/main/java/com/oovever/test/
+2018-04-07 15:12:51.157 [main] INFO  c.y.g.c.g.dbGenerator.MysqlGenerator - generate ouput mapper dir : d:/tmp1/generator-result/src/main/resources/mapper/
+2018-04-07 15:12:51.157 [main] INFO  c.y.g.c.g.c.pojo.MysqlPoJoGenerator - generate : UserPojo.java
+2018-04-07 15:12:51.162 [main] INFO  c.y.g.c.g.c.c.MysqlControllerGenerator - generate controller : UserController.java
+2018-04-07 15:12:51.174 [main] INFO  c.y.g.c.g.c.s.MysqlServiceGenerator - generate service : UserService.java
+2018-04-07 15:12:51.178 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoGenerator - generate dao : UserDao.java
+2018-04-07 15:12:51.187 [main] INFO  c.y.g.c.g.c.dao.MysqlDaoMapperGenerator - generate mapper: User.xml
+2018-04-07 15:12:51.218 [main] INFO  c.y.g.c.g.c.r.MybatisConfigGenerator - generate mybatis config
+2018-04-07 15:12:51.247 [main] INFO  c.y.g.c.g.c.ApplicationGenerator - generate ProjectApplication ...
+2018-04-07 15:12:51.251 [main] INFO  c.y.g.c.g.c.ApplicationGenerator - finish generate ProjectApplication
+2018-04-07 15:12:51.252 [main] INFO  c.y.g.c.g.c.resource.LogConfigGenerator - generate log config
+2018-04-07 15:12:51.348 [main] INFO  c.y.g.c.g.c.resource.PomGenerator - generate pom ...
+2018-04-07 15:12:51.357 [main] INFO  c.y.g.c.g.c.resource.PropertiesGenerator - generate properties ...

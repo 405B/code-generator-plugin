@@ -1,0 +1,18 @@
+2018-04-07 14:51:30.199 [main] ERROR c.y.g.core.config.GeneratorConfigTest - ddd
+2018-04-07 14:51:30.230 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-04-07 14:51:30.232 [main] INFO  c.y.g.core.config.GeneratorConfig - the config file has loaded
+2018-04-07 14:51:30.233 [main] INFO  c.y.generator.core.config.VelocityConfig - template init success
+2018-04-07 14:51:30.586 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : category
+2018-04-07 14:51:30.587 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : product
+2018-04-07 14:51:30.587 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table : user
+2018-04-07 14:51:30.598 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : category, primaryKey : id
+2018-04-07 14:51:30.611 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : id
+2018-04-07 14:51:30.611 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : category, column : name
+2018-04-07 14:51:30.624 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : product, primaryKey : id
+2018-04-07 14:51:30.634 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : id
+2018-04-07 14:51:30.634 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : name
+2018-04-07 14:51:30.634 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : product, column : cid
+2018-04-07 14:51:30.645 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table primaryKey, table : user, primaryKey : id
+2018-04-07 14:51:30.656 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : id
+2018-04-07 14:51:30.656 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : age
+2018-04-07 14:51:30.656 [main] INFO  c.y.g.c.generator.reader.MysqlDbReader - get table column, table : user, column : name
